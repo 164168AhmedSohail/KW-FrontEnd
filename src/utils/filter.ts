@@ -1,6 +1,6 @@
 import { User } from "../types/types";
 
-export const filterByGender = (data: any[], gender: string | null) => {
+export const filterByGender = (data: User[], gender: string | null) => {
   return gender ? data.filter((item) => item.gender === gender) : data;
 };
 export const filterBySearch = (data: User[], searchTerm: string) => {
